@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        //задание №1
+        let Tc = 25;
+        let Tf = (9/5) * Tc + 32;
+        alert(Tf);
+        //задание №2
+        let name = "Василий" ;
+        let admine = name ;
+        console.log(admine);
+        //задание №3
+        let result1 = 10 + 10 + "10";
+        let result2 = 10 + "10" + 10;
+        let result3 = 10 + 10 + +"10";
+        let result4 = 10 / -"";
+        let result5 = 10 / +"2,5";
+        /*
+        result1 "10" преобразует в строку 2010
+        result2 "10" преобразует в строку 101010
+        result3 ++"10" преобразует в числовое значение 10
+        result4 / -0 преобразует в -Infinity
+        result5 "2,5" "," воспринимается как ошибка выдает NaN 
+        */
+        //задание №*
+        let result = 3 - 4 * 2;
+        console.log(result);
+        
+    </script>
+</body>
+</html>
