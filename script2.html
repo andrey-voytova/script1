@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //задание №1
+        'use strict'
+                //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2 (++a увеличивает значение на 1 и присваевает его (a=2 c=2))
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1  (b++ присваевает значение после чего увеличевает его (d=1 b=2))
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5  (++a увеличивает значение на 1 т.к. a=2 запись будет выглядеть так 2+(1+2) после чего будет присвоен a=3 c=5 )
+        //пример 4
+        d = 2 + b++;  
+        alert(d); //ответ: 4  (b++ присваевает значение после чего увеличевает его т.к b=2 запись будет выглядеть так (2+2)+1 d будет равно  4  а  b будет присвоено 5  )
+        alert(a); //3
+        alert(b); //3
+
+        //задание №2
+            // после выполнения умножения а будет присвоен результат следовательно а=4 х=5
+            let a = 2;
+            let x = 1 + (a *=2); 
+
+        //задание №3 
+
+        let a = 12, b = 23;
+        if (a >= 0 && b >= 0){
+            console.log(a - b);
+        } else if (a < 0 && b < 0){
+            console.log(a * b);
+        } else if (a > 0 && b < 0 || a < 0 && b > 0){
+            console.log(a + b)
+        }
+        
+        //задание №4
+        let a = 12, b = 24;
+        function fold(a,b){
+            return a + b;
+        }
+        function deduct(a,b){
+            return a - b;
+        }
+        function divide(a,b){
+            return a / b;
+        }
+        function multiply(a,b){
+            return a * b;
+        }
+        //задание №5
+        function mathOperation(arg1, arg2, operation){
+            switch(operation){
+       				 case '+':
+           				 return fold(arg1, arg2);
+           				 break;
+       				 case '-':
+           				 return deduct(arg1, arg2);
+            			 break;
+        			 case '/':
+                      			 return divide(arg1, arg2);
+            			 break;
+       				 case '*':
+           				 return multiply(arg1, arg2);
+            			 break;
+   				}
+		}
+            
+
+    </script>
+    
+</body>
+</html>
