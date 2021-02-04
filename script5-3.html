@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- задание 4.1-->
+    <!-- Задание. Отследите когда все теги будут добавлены на страницу (событие
+    DOMContentLoaded) и выведите alert'ом сообщение: "все теги добавлены на страницу". -->
+
+    <script>
+        'use strict';
+        document.addEventListener('DOMContentLoaded', function () {
+            alert("все теги добавлены на страницу");
+        });
+    </script>
+    <!-- задание 4.2-->
+    <img src="https://placeimg.com/1000/1000/animals" alt="">
+    <img src="https://placeimg.com/1000/1000/arch" alt="">
+    <img src="https://placeimg.com/1000/1000/nature" alt="">
+    <img src="https://placeimg.com/1000/1000/people" alt="">
+    <img src="https://placeimg.com/1000/1000/tech" alt="">
+    <img src="https://placeimg.com/1000/1000/tech/grayscale" alt="">
+    <img src="https://placeimg.com/1000/1000/tech/sepia" alt="">
+
+    <!-- Задание. Дождитесь когда все картинки загрузятся (событие load) и
+    покажите с помощью alert сообщение: "все картинки загружены". -->
+
+    <script>
+        'use strict';
+        window.addEventListener('load', function () {
+            alert("все картинки загружены");
+        });
+        
+    </script>
+
+     <!-- задание 4.3-->
+
+     <button>Кнопка</button>
+     <button class="btn">Кнопка с классом btn</button>
+     <button>Кнопка</button>
+ 
+     <!-- Задание. Сделайте, чтобы по клику по кнопке с классом .btn появлялся
+     alert('клик') -->
+ 
+     <script>
+         'use strict';
+         let btn = document.querySelector('.btn');
+         btn.addEventListener('click', function () {
+             alert('клик');
+         });
+     </script>
+
+    <!-- задание 4.4-->
+
+         <textarea></textarea>
+
+         <!-- Задание. Сделайте, чтобы при наведении на textarea в консоли
+         появлялось сообщение: "вы навели на textarea" -->
+     
+         <script>
+             'use strict';
+             let textarea = document.querySelector('textarea');
+             textarea.addEventListener('mouseover', function () {
+                 console.log("вы навели на textarea");
+             });
+         </script>
+</body>
+</html>
