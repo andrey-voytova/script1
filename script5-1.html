@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- задание 2.1-->
+    <div class="media">
+        <img src="..." class="align-self-start mr-3" alt="...">
+        <div class="media-body">
+            <h5 class="mt-0">Top-aligned media</h5>
+            <p>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus
+                odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.
+            </p>
+            <p>
+                Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+    </div>
+
+    <!-- Задание. Обратитесь к элементу с классом .mt-0 и получите его родителя - элемент с
+    классом .media-body. -->
+
+    <script>
+        'use strict';
+        let mt0El = document.querySelector('.mt-0');
+        console.log(mt0El.parentNode);
+    </script>
+
+    <!-- задание 2.2 -->
+    <div>
+
+    </div>
+
+    <!-- Задание. Добавьте в div c помощью appendChild следующую разметку:
+    <h3>hello world</h3>
+    -->
+
+    <script>
+        'use strict';
+        let div = document.querySelector('div');
+        let h3 = document.createElement('h3');
+        h3.innerText = 'hello world';
+        div.appendChild(h3);
+    </script>
+<!-- задание 2.3 -->
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+
+<!-- Задание. 
+1. Найдите элемент с классом .btn-outline-warning и удалите его.
+2. Аналогичным образом удалите элемент с классом .btn-outline-dark -->
+
+<script>
+    'use strict';
+    let btnWarning = document.querySelector('.btn-outline-warning');
+    btnWarning.remove();
+    let btnDark = document.querySelector('.btn-outline-dark');
+    btnDark.remove();
+</script>
+<!-- задание 2.4 -->
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+<!-- Задание. Найдите кнопку с классом .btn-info и сделайте текст в кнопке: "Кнопка".-->
+
+<script>
+    'use strict';
+    let btn = document.querySelector('.btn-info');
+    btn.innerText = 'Кнопка';
+</script>
+</body>
+</body>
+</html>
